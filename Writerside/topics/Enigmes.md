@@ -5,11 +5,21 @@
 
 ```mermaid
 flowchart TB
-    z2("Quête Principale")
-    z3("Quête secondaire")
-    z4("Interaction virtuel")
-    z5("Interaction Mixte")
-    z6("Interaction Réel")
+    z1("Quête Principale")
+    z2("Quête secondaire")
+    z3("Interaction virtuel")
+    z4("Interaction Mixte")
+    z5("Interaction Réel")
+    
+    style z1 fill:#040b34
+    style z2 fill:#038a55
+    style z3 fill:#19191c00, stroke:#ff0000
+    style z4 fill:#19191c00, stroke:#ff0000, stroke-dasharray: 10 5
+    style z5 fill:#19191c00, stroke:#ff000000
+```
+
+```mermaid
+flowchart TB
     z1("Syncronisation")
     
     subgraph DDust2
@@ -108,11 +118,6 @@ flowchart TB
     e3 --> y2
     
     style z1 fill:#040b34, stroke:#ff0000
-    style z2 fill:#040b34
-    style z3 fill:#038a55
-    style z4 fill:#19191c00, stroke:#ff0000
-    style z5 fill:#19191c00, stroke:#ff0000, stroke-dasharray: 10 5
-    style z6 fill:#19191c00, stroke:#ff000000
     
     style a1 fill:#040b34
     style a2 fill:#040b34, stroke:#ff0000
@@ -155,6 +160,21 @@ flowchart TB
 ```
 </tab>
 <tab title="Simplified view">
+
+```mermaid
+flowchart TB
+    z1("Quête Principale")
+    z2("Quête secondaire")
+    z3("Interaction virtuel")
+    z4("Interaction Mixte")
+    z5("Interaction Réel")
+    
+    style z1 fill:#040b34
+    style z2 fill:#038a55
+    style z3 fill:#19191c00, stroke:#ff0000
+    style z4 fill:#19191c00, stroke:#ff0000, stroke-dasharray: 10 5
+    style z5 fill:#19191c00, stroke:#ff000000
+```
 
 ```mermaid
 flowchart TB
