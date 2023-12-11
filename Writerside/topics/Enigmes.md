@@ -1,25 +1,67 @@
 # Enigmes
 
+<tabs>
+<tab title="Complete view">
+
 ```mermaid
 flowchart TB
+    z2("Quête Principale")
+    z3("Quête secondaire")
+    z4("Interaction virtuel")
+    z5("Interaction Mixte")
+    z6("Interaction Réel")
     z1("Syncronisation")
+    
+    subgraph DDust2
+        a1("Ordinateur du dev")
+        a2("Carte de l'étage")
+        a3("Dévérouillage des portes")
+        a4("Enquêtes")
+        a5("Dates de naissance de son frère")
+        a6("Journaux réussite de l'ia")
+        a7("Lampe torche")
+        a8("Lignes de code")
+        a9("Game bible")
+        a10("Inscriptions sur le mur")
+    end
+    
+    subgraph "Premier Couloir"
+        b1("Sac renversé")
+        b2("Casier couloir")
+    end
+    
+    subgraph Totoro
+        c1("Timer entrée en Totoro")
+        c2("Sécutité couloir")
+        c3("Désactivation des caméras")
+        c4("Active la suite sur la carte")
+        c5("Chaud froid")
+        c6("Diaporama")
+        c7("Faiblesses de l'ia")
+        c8("Fouilles")
+        c9("Salle des serveurs")
+        c10("Note du projet par les intervenants")
+        c11("Projecteur")
+        c12("Tableau ardoise")
+    end
+    
+    subgraph "Deuxième Couloir"
+        d1("Ouverture Corvo")
+        d2("Enigme ampoules")
+        d3("Scène de crime")
+        d4("Dossier sur la porte")
+    end
+    
+    subgraph Corvo
+        e1("Reboot de l'ia")
+        e2("Le parcour apparait")
+        e3("Choix final")
+    end
+    
     z1 -- Ordinateur allumé dans le virtuel --> a1
     z1 -- Fouille sur le bureau près de l\'ordinateur --> a7
     z1 -- Fouille dans la salle virtuelle --> a9
     z1 -- Inscriptions sur le mur virtuelle et réelle --> a10
-    
-    subgraph DDust2
-    a1("Ordinateur du dev")
-    a2("Carte de l'étage")
-    a3("Dévérouillage des portes")
-    a4("Enquêtes")
-    a5("Dates de naissance de son frère")
-    a6("Journaux réussite de l'ia")
-    a7("Lampe torche")
-    a8("Lignes de code")
-    a9("Game bible")
-    a10("Inscriptions sur le mur")
-    
     a1 -- Photos du dev + mot de passe --> a2
     a2 -- Rétablir le code --> a3
     a1 -- Fouille de l'ordinateur --> a4
@@ -27,30 +69,8 @@ flowchart TB
     a1 -- Fouille de l'ordinateur --> a6
     a7 -- "Capteurs lumineux\n1 - Sur l’ordinateur du dev\n2 - Mur noir\n3 - Porte\n." --> a8
     a8 --> a2
-    end
-    
-    subgraph "Premier Couloir"
-    b1("Sac renversé")
-    b2("Casier couloir")
-    
     a5 -- Enigme de la vie --> b2
     a6 -- Enigme de la vie --> b2
-    end
-    
-    subgraph Totoro
-    c1("Timer entrée en Totoro")
-    c2("Sécutité couloir")
-    c3("Désactivation des caméras")
-    c4("Active la suite sur la carte")
-    c5("Chaud froid")
-    c6("Diaporama")
-    c7("Faiblesses de l'ia")
-    c8("Fouilles")
-    c9("Salle des serveurs")
-    c10("Note du projet par les intervenants")
-    c11("Projecteur")
-    c12("Tableau ardoise")
-    
     a3 --> c1
     c1 -- Au bout de 2min --> c2
     c2 -- Enigme de la vie --> b2
@@ -68,26 +88,11 @@ flowchart TB
     c1 --> c11
     c1 -- Capteurs lumineux sur le projecteur --> c11
     c12 -- Enigme de la vie --> b2
-    end
-    
-    subgraph "Deuxième Couloir"
-    d1("Ouverture Corvo")
-    d2("Enigme ampoules")
-    d3("Scène de crime")
-    d4("Dossier sur la porte")
-    
     c5 -- Clé porte de totoro --> d1
     b2 -- Ampoule --> d2
     c8 -- Ampoule --> d2
     b1 --> d3
     d3 -- Ampoule --> d2
-    end
-    
-    subgraph Corvo
-    e1("Reboot de l'ia")
-    e2("Le parcour apparait")
-    e3("Choix final")
-    
     d1 -- Nom du frère disparu --> e1
     d4 -- Nom du frère disparu --> e1
     b1 -- Nom du frère disparu --> e1
@@ -95,7 +100,6 @@ flowchart TB
     e1 -- Surchauffer la RAM avec des capteurs de chaleur --> e2
     c12 -- jeu d'échec --> e2
     e2 -- Réussite du parcours et pression sur le bouton --> e3
-    end
     
     y1("Fuite de la simulation")
     y2("IA scéllée")
@@ -104,6 +108,12 @@ flowchart TB
     e3 --> y2
     
     style z1 fill:#040b34, stroke:#ff0000
+    style z2 fill:#040b34
+    style z3 fill:#038a55
+    style z4 fill:#19191c00, stroke:#ff0000
+    style z5 fill:#19191c00, stroke:#ff0000, stroke-dasharray: 10 5
+    style z6 fill:#19191c00, stroke:#ff000000
+    
     style a1 fill:#040b34
     style a2 fill:#040b34, stroke:#ff0000
     style a3 fill:#040b34
@@ -143,6 +153,95 @@ flowchart TB
     style y1 fill:#ff3131
     style y2 fill:#7ed957
 ```
+</tab>
+<tab title="Simplified view">
+
+```mermaid
+flowchart TB
+    subgraph Corvo
+        e1("Reboot de l'ia")
+        e2("Le parcour apparait")
+        e3("Choix final")
+    end
+    
+    subgraph "Deuxième Couloir"
+        d1("Ouverture Corvo")
+        d2("Enigme ampoules")
+        d3("Scène de crime")
+        d4("Dossier sur la porte")
+    end
+    
+    subgraph Totoro
+        c1("Timer entrée en Totoro")
+        c2("Sécutité couloir")
+        c3("Désactivation des caméras")
+        c4("Active la suite sur la carte")
+        c5("Chaud froid")
+        c6("Diaporama")
+        c7("Faiblesses de l'ia")
+        c8("Fouilles")
+        c9("Salle des serveurs")
+        c10("Note du projet par les intervenants")
+        c11("Projecteur")
+        c12("Tableau ardoise")
+    end
+    
+    subgraph "Premier Couloir"
+        b1("Sac renversé")
+        b2("Casier couloir")
+    end
+    
+    subgraph DDust2
+        a1("Ordinateur du dev")
+        a2("Carte de l'étage")
+        a3("Dévérouillage des portes")
+        a4("Enquêtes")
+        a5("Dates de naissance de son frère")
+        a6("Journaux réussite de l'ia")
+        a7("Lampe torche")
+        a8("Lignes de code")
+        a9("Game bible")
+        a10("Inscriptions sur le mur")
+    end
+    
+    style a1 fill:#040b34
+    style a2 fill:#040b34, stroke:#ff0000
+    style a3 fill:#040b34
+    style a4 fill:#038a55
+    style a5 fill:#038a55
+    style a6 fill:#038a55
+    style a7 fill:#038a55, stroke:#ff0000, stroke-dasharray: 10 5
+    style a8 fill:#038a55, stroke:#ff0000
+    style a9 fill:#038a55, stroke:#ff0000
+    style a10 fill:#038a55, stroke:#ff0000, stroke-dasharray: 10 5
+
+    style b1 fill:#038a55
+    style b2 fill:#040b34
+    
+    style c1 fill:#040b34
+    style c2 fill:#040b34, stroke:#ff0000
+    style c3 fill:#040b34
+    style c4 fill:#040b34, stroke:#ff0000
+    style c5 fill:#040b34, stroke:#ff0000
+    style c6 fill:#040b34, stroke:#ff0000, stroke-dasharray: 10 5
+    style c7 fill:#040b34
+    style c8 fill:#040b34, stroke:#ff0000
+    style c9 fill:#ff00bf
+    style c10 fill:#038a55
+    style c11 fill:#038a55, stroke:#ff0000, stroke-dasharray: 10 5
+    style c12 fill:#038a55
+    
+    style d1 fill:#040b34
+    style d2 fill:#040b34
+    style d3 fill:#038a55, stroke:#ff0000
+    style d4 fill:#038a55
+    
+    style e1 fill:#040b34
+    style e2 fill:#040b34
+    style e3 fill:#040b34
+```
+</tab>
+</tabs>
 
 ## Déroulements de l’escape game :
 
