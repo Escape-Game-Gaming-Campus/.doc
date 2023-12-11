@@ -27,7 +27,7 @@ flowchart TB
     
     subgraph "Premier Couloir"
         b1("Sac renversé")
-        b2("Casier couloir")
+        b2("Casier")
     end
     
     subgraph Totoro
@@ -188,7 +188,7 @@ flowchart TB
     
     subgraph "Premier Couloir"
         b1("Sac renversé")
-        b2("Casier couloir")
+        b2("Casier")
     end
     
     subgraph DDust2
