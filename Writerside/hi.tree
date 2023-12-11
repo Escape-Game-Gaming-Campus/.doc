@@ -6,6 +6,7 @@
                  name="Help Instance"
                  start-page="Default-topic.md">
 
-    <toc-element topic="Default-topic.md"/>
-    <toc-element topic="Empty-MD-Topic.md"/>
+    <toc-element topic="Default-topic.md">
+        <toc-element topic="Enigmes.md"/>
+    </toc-element>
 </instance-profile>
