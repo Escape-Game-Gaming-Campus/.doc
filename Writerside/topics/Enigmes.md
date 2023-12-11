@@ -185,6 +185,7 @@ Fiches technique sur la mémoire vive (avec des notes du développeur dessus exp
 
 #### Enigme de la vie :
 A l’aide de plusieurs phrases disséminées dans l’escape game, les joueurs pourront trouveront une combinaison qui permettra d’ouvrir le casier
+
 <img alt="Représentation de l&#39;énigme de la vie" src="Enigme de la vie.png" height="150"/>
 
 
