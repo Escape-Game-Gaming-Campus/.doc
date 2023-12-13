@@ -1,3 +1,3 @@
 # Site
 
-Start typing here...
+## Redirections
