@@ -16,6 +16,7 @@ Sends a hello world message to the client
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
 | ↳ | message | string | Retourne "Hello world!" | false |
+- __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld)
 
 
 ### **Update**
@@ -33,6 +34,7 @@ Updates the client
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+- __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld) [notesChange](Pusher.md#noteschange) [updateInventory](Pusher.md#updateinventory) [ddust2TryPsd](Pusher.md#ddust2trypsd)
 ## POST
 
 
@@ -54,6 +56,7 @@ Try a password to unlock Totoro
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
 | ↳ | message | string | The message to display | false |
+- __Utilisation de Pusher__: [ddust2TryPsd](Pusher.md#ddust2trypsd)
 
 
 ### **Add to inventory**
@@ -77,6 +80,7 @@ Adds an item to the inventory
 |  | { } | object { } |  |  |
 | ↳ | success | boolean | If the item was added | false |
 | ↳ | message | string | The message to display | true |
+- __Utilisation de Pusher__: [updateInventory](Pusher.md#updateinventory)
 
 
 ### **Notes changes**
@@ -94,6 +98,7 @@ Change notes informations from players
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+- __Utilisation de Pusher__: [notesChange](Pusher.md#noteschange)
 ## DELETE
 
 
@@ -113,3 +118,4 @@ Removes an item to the inventory
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+- __Utilisation de Pusher__: [updateInventory](Pusher.md#updateinventory)
