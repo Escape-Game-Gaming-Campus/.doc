@@ -11,6 +11,9 @@
     <toc-element topic="Enigmes.md"/>
     <toc-element topic="Tech.md">
         <toc-element topic="Site.md"/>
-        <toc-element topic="API.md"/>
+        <toc-element topic="API.md">
+            <toc-element topic="Commands.md"/>
+            <toc-element topic="Pusher.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>
