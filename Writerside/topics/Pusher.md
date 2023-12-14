@@ -6,63 +6,137 @@
 
 ### **helloWorld**
 
-Sends a hello world message to the client
+Envoie un message Hello World aux clients
 
-- __Input__: Aucune
+- __Input__: Aucun
 - __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
 
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
 | ↳ | message | string | The hello world message | false |
 
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "message": "string"
+}
+```
+  </tab>
+</tabs>
+
+
 
 ### **notesChange**
 
-Change notes informations from players
+Envoie les notes de l'équipe à jour
 
-- __Input__: Aucune
+- __Input__: Aucun
 - __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
 
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
-| ↳ | notes | string | The notes of the team | false |
+| ↳ | notes | string | Envoie aux clients la dernière note à jour | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "notes": "string"
+}
+```
+  </tab>
+</tabs>
+
 ## INVENTORY
 
 
 
 ### **updateInventory**
 
-Sends the updated inventory to the client
+Envoye la liste des objets de l'inventaire à jour
 
-- __Input__: Aucune
+- __Input__: Aucun
 - __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
 
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | [ ] | list [ ] |  |  |
 | ↳ | [ ] | object { } |  |  |
-| │↳ | name | string | The name of the object | false |
-| │↳ | UUID | number | The UUID of the object | false |
-| │↳ | texture | string | The texture of the object | false |
+| │↳ | name | string | Nom de l'objet | false |
+| │↳ | UUID | number | UUID de l'objet | false |
+| │↳ | texture | string | Lien pour accéder à la texture de l'objet (utiliser de préférence AppConfig.json pour obtenir le lien quand il est set) | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+[
+  {
+    "name": "string",
+    "UUID": "number",
+    "texture": "string"
+  }
+]
+```
+  </tab>
+</tabs>
+
 ## ENIGMS
 
 
 
 ### **ddust2TryPsd**
 
-Try a password to unlock Totoro
+Envoie aux clients si le password a été entrée correctement, mais uniquement si l'état de découverte du password a changé (possibiliter de forcer l'envoie avec le paramètre force)
 
 - __Input__: 
 
-| | Nom | Type | Description | optional |
-| --- | --- | --- | --- | --- |
-|  | { } | object { } |  |  |
-| ↳ | psdValid | boolean | Envoie si le password a été entrée correctement | false |
-- __Output__: 
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
 
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
-| ↳ | valid | boolean | Retourne si le password a été entrée correctement | false |
+| ↳ | psdValid | boolean | Si le password a été entrée avec succès par un client, envoyer true ici | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "psdValid": "boolean"
+}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | valid | boolean | Renvoie aux clients si le password a été entrée correctement | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "valid": "boolean"
+}
+```
+  </tab>
+</tabs>
+
