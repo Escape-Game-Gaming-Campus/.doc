@@ -176,7 +176,7 @@ Permet de vérifier si le mot de passe pour débloquer Totoro est bon
 
 ### **Try PasswordPC HallWay2**
 
-Permet de vérifier si le mot de passe pour débloquer Totoro est bon
+Enigme scene de crime pour avoir une ampoule rouge
 
 - __Path__: [/hallWay2/tryPsd](http://localhost:3001/hallWay2/tryPsd)
 - __Input__: 
