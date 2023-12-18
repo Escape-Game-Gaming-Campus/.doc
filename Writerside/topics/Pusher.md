@@ -140,6 +140,52 @@ Envoie aux clients si le password a été entrée correctement, mais uniquement 
   </tab>
 </tabs>
 
+
+
+### **hallWay2TryPsd**
+
+Envoie aux clients si le password a été entrée correctement, mais uniquement si l'état de découverte du password a changé (possibiliter de forcer l'envoie avec le paramètre force)
+
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | psdValid | boolean | Si le password a été entrée avec succès par un client, envoyer true ici | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "psdValid": "boolean"
+}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | valid | boolean | Renvoie aux clients si le password a été entrée correctement | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "valid": "boolean"
+}
+```
+  </tab>
+</tabs>
+
 ## PLAYERS
 
 

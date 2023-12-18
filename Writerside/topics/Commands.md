@@ -121,7 +121,7 @@ Met à jour les clients (lancer à chaque fois qu'un client se (re)connecte, et 
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld) [notesChange](Pusher.md#noteschange) [updatePlayers](Pusher.md#updateplayers) [updateInventory](Pusher.md#updateinventory) [ddust2TryPsd](Pusher.md#ddust2trypsd)
+- __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld) [notesChange](Pusher.md#noteschange) [updatePlayers](Pusher.md#updateplayers) [updateInventory](Pusher.md#updateinventory) [hallWay2TryPsd](Pusher.md#hallway2trypsd) [ddust2TryPsd](Pusher.md#ddust2trypsd)
 ## POST
 
 
@@ -171,7 +171,55 @@ Permet de vérifier si le mot de passe pour débloquer Totoro est bon
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [ddust2TryPsd](Pusher.md#ddust2trypsd)
+- __Utilisation de Pusher__: [ddust2TryPsd](Pusher.md#ddust2trypsd) [updateInventory](Pusher.md#updateinventory) [hallWay2TryPsd](Pusher.md#hallway2trypsd)
+
+
+### **Try PasswordPC**
+
+Permet de vérifier si le mot de passe pour débloquer Totoro est bon
+
+- __Path__: [/hallWay2/tryPsd](http://localhost:3001/hallWay2/tryPsd)
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | psd | string | Mot de passe a essayer | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "psd": "string"
+}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | message | string | message d'erreur/de succès | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "message": "string"
+}
+```
+  </tab>
+</tabs>
+
+- __Utilisation de Pusher__: [[ddust2TryPsd](Pusher.md#ddust2trypsd)](Pusher.md#[ddust2trypsd](pusher.md#ddust2trypsd)) [[updateInventory](Pusher.md#updateinventory)](Pusher.md#[updateinventory](pusher.md#updateinventory)) [[hallWay2TryPsd](Pusher.md#hallway2trypsd)](Pusher.md#[hallway2trypsd](pusher.md#hallway2trypsd))
 
 
 ### **Add to inventory**
