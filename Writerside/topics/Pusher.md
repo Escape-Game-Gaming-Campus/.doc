@@ -56,6 +56,46 @@ Envoie les notes de l'équipe à jour
   </tab>
 </tabs>
 
+
+
+### **updatePlayers**
+
+Sends the updated players informations to the client
+
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
 ## INVENTORY
 
 

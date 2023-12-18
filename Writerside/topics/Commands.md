@@ -33,6 +33,48 @@ Renvoie "Hello world!"
 - __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld)
 
 
+### **Get players**
+
+Get players
+
+- __Path__: [/players/get](http://localhost:3001/players/get)
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Utilisation de Pusher__: [updatePlayers](Pusher.md#updateplayers) [updatePlayers](Pusher.md#updateplayers)
+
+
 ### **Update**
 
 Met à jour les clients (lancer à chaque fois qu'un client se (re)connecte, et au lancement de l'API)
@@ -214,6 +256,132 @@ Change les notes de l'équipe
 </tabs>
 
 - __Utilisation de Pusher__: [notesChange](Pusher.md#noteschange)
+
+
+### **Delete players**
+
+Delete players
+
+- __Path__: [/players/delete](http://localhost:3001/players/delete)
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Utilisation de Pusher__: [updatePlayers](Pusher.md#updateplayers)
+
+
+### **New players**
+
+Add knew players
+
+- __Path__: [/players/add](http://localhost:3001/players/add)
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Utilisation de Pusher__: [updatePlayers](Pusher.md#updateplayers)
+
+
+### **Update player**
+
+Update player by name
+
+- __Path__: [/players/update](http://localhost:3001/players/update)
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{}
+```
+  </tab>
+</tabs>
+
+- __Utilisation de Pusher__: [updatePlayers](Pusher.md#updateplayers)
 ## DELETE
 
 
