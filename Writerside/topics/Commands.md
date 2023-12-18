@@ -126,7 +126,7 @@ Met à jour les clients (lancer à chaque fois qu'un client se (re)connecte, et 
 
 
 
-### **Try PasswordPC**
+### **Try PasswordPC DDust2**
 
 Permet de vérifier si le mot de passe pour débloquer Totoro est bon
 
@@ -171,10 +171,10 @@ Permet de vérifier si le mot de passe pour débloquer Totoro est bon
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [ddust2TryPsd](Pusher.md#ddust2trypsd) [updateInventory](Pusher.md#updateinventory) [hallWay2TryPsd](Pusher.md#hallway2trypsd)
+- __Utilisation de Pusher__: [ddust2TryPsd](Pusher.md#ddust2trypsd)
 
 
-### **Try PasswordPC**
+### **Try PasswordPC HallWay2**
 
 Permet de vérifier si le mot de passe pour débloquer Totoro est bon
 
@@ -219,7 +219,7 @@ Permet de vérifier si le mot de passe pour débloquer Totoro est bon
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [[ddust2TryPsd](Pusher.md#ddust2trypsd)](Pusher.md#[ddust2trypsd](pusher.md#ddust2trypsd)) [[updateInventory](Pusher.md#updateinventory)](Pusher.md#[updateinventory](pusher.md#updateinventory)) [[hallWay2TryPsd](Pusher.md#hallway2trypsd)](Pusher.md#[hallway2trypsd](pusher.md#hallway2trypsd))
+- __Utilisation de Pusher__: [updateInventory](Pusher.md#updateinventory) [hallWay2TryPsd](Pusher.md#hallway2trypsd)
 
 
 ### **Add to inventory**
