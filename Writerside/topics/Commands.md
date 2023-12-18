@@ -68,7 +68,7 @@ Get tout les players ou un player en particulier
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
-| ↳ | player | list [ ] |  |  |
+| ↳ | players | list [ ] |  |  |
 | │↳ | [ ] | object { } |  |  |
 | ││↳ | ID | number | L'id du player get | false |
 | ││↳ | name | string | le nom du player | false |
@@ -79,7 +79,7 @@ Get tout les players ou un player en particulier
 
 ```json
 {
-  "player": [
+  "players": [
     {
       "ID": "number",
       "name": "string",
@@ -294,7 +294,7 @@ Supprime des joueurs (par leur nom ou leur id)
 | ↳ | players | list [ ] |  |  |
 | │↳ | [ ] | object { } |  |  |
 | ││↳ | ID | number | L'id du player à détruire (facultatif si utilise le name) | false |
-| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id') | false |
+| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id) | false |
 
   </tab><tab group-key="Json" title="JSON">
 
@@ -350,7 +350,7 @@ Ajoute des joueurs (par leur nom ou leur id)
 | ↳ | players | list [ ] |  |  |
 | │↳ | [ ] | object { } |  |  |
 | ││↳ | ID | number | L'id du player à détruire (facultatif si utilise le name) | false |
-| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id') | false |
+| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id) | false |
 | ││↳ | position | number[ ] | 3 nombres tels un vect3 qui définissent la position du joueur | false |
 
   </tab><tab group-key="Json" title="JSON">
@@ -408,7 +408,7 @@ Met à jour un joueur (par son nom ou son id)
 | ↳ | players | list [ ] |  |  |
 | │↳ | [ ] | object { } |  |  |
 | ││↳ | ID | number | L'id du player à détruire (facultatif si utilise le name) | false |
-| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id') | false |
+| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id) | false |
 | ││↳ | position | number[ ] | 3 nombres tels un vect3 qui définissent la position du joueur | false |
 
   </tab><tab group-key="Json" title="JSON">
