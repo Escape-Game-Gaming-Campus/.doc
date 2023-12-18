@@ -35,7 +35,7 @@ Renvoie "Hello world!"
 
 ### **Get players**
 
-Get players
+Get tout les players ou un player en particulier
 
 - __Path__: [/players/get](http://localhost:3001/players/get)
 - __Input__: 
@@ -46,11 +46,16 @@ Get players
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+| ↳ | ID | number | L'id du player à get | true |
+| ↳ | name | string | Le nom du player à get | true |
 
   </tab><tab group-key="Json" title="JSON">
 
 ```json
-{}
+{
+  "ID": "number",
+  "name": "string"
+}
 ```
   </tab>
 </tabs>
@@ -63,16 +68,31 @@ Get players
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+| ↳ | player | list [ ] |  |  |
+| │↳ | [ ] | object { } |  |  |
+| ││↳ | ID | number | L'id du player get | false |
+| ││↳ | name | string | le nom du player | false |
+| ││↳ | position | number[ ] | Liste de 3 valeurs tels un Vect3 correspondant au positions du joueur | false |
+| ↳ | message | string | message d'erreur/de succès | false |
 
   </tab><tab group-key="Json" title="JSON">
 
 ```json
-{}
+{
+  "player": [
+    {
+      "ID": "number",
+      "name": "string",
+      "position": "number[]"
+    }
+  ],
+  "message": "string"
+}
 ```
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [updatePlayers](Pusher.md#updateplayers) [updatePlayers](Pusher.md#updateplayers)
+- __Utilisation de Pusher__: [updatePlayers](Pusher.md#updateplayers)
 
 
 ### **Update**
@@ -101,7 +121,7 @@ Met à jour les clients (lancer à chaque fois qu'un client se (re)connecte, et 
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld) [notesChange](Pusher.md#noteschange) [updateInventory](Pusher.md#updateinventory) [ddust2TryPsd](Pusher.md#ddust2trypsd)
+- __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld) [notesChange](Pusher.md#noteschange) [updatePlayers](Pusher.md#updateplayers) [updateInventory](Pusher.md#updateinventory) [ddust2TryPsd](Pusher.md#ddust2trypsd)
 ## POST
 
 
@@ -260,7 +280,7 @@ Change les notes de l'équipe
 
 ### **Delete players**
 
-Delete players
+Supprime des joueurs (par leur nom ou leur id)
 
 - __Path__: [/players/delete](http://localhost:3001/players/delete)
 - __Input__: 
@@ -271,11 +291,22 @@ Delete players
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+| ↳ | players | list [ ] |  |  |
+| │↳ | [ ] | object { } |  |  |
+| ││↳ | ID | number | L'id du player à détruire (facultatif si utilise le name) | false |
+| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id') | false |
 
   </tab><tab group-key="Json" title="JSON">
 
 ```json
-{}
+{
+  "players": [
+    {
+      "ID": "number",
+      "name": "string"
+    }
+  ]
+}
 ```
   </tab>
 </tabs>
@@ -288,11 +319,14 @@ Delete players
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+| ↳ | message | string | message d'erreur/de succès | false |
 
   </tab><tab group-key="Json" title="JSON">
 
 ```json
-{}
+{
+  "message": "string"
+}
 ```
   </tab>
 </tabs>
@@ -302,7 +336,7 @@ Delete players
 
 ### **New players**
 
-Add knew players
+Ajoute des joueurs (par leur nom ou leur id)
 
 - __Path__: [/players/add](http://localhost:3001/players/add)
 - __Input__: 
@@ -313,11 +347,24 @@ Add knew players
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+| ↳ | players | list [ ] |  |  |
+| │↳ | [ ] | object { } |  |  |
+| ││↳ | ID | number | L'id du player à détruire (facultatif si utilise le name) | false |
+| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id') | false |
+| ││↳ | position | number[ ] | 3 nombres tels un vect3 qui définissent la position du joueur | false |
 
   </tab><tab group-key="Json" title="JSON">
 
 ```json
-{}
+{
+  "players": [
+    {
+      "ID": "number",
+      "name": "string",
+      "position": "number[]"
+    }
+  ]
+}
 ```
   </tab>
 </tabs>
@@ -330,11 +377,14 @@ Add knew players
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+| ↳ | message | string | message d'erreur/de succès | false |
 
   </tab><tab group-key="Json" title="JSON">
 
 ```json
-{}
+{
+  "message": "string"
+}
 ```
   </tab>
 </tabs>
@@ -344,7 +394,7 @@ Add knew players
 
 ### **Update player**
 
-Update player by name
+Met à jour un joueur (par son nom ou son id)
 
 - __Path__: [/players/update](http://localhost:3001/players/update)
 - __Input__: 
@@ -355,11 +405,24 @@ Update player by name
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+| ↳ | players | list [ ] |  |  |
+| │↳ | [ ] | object { } |  |  |
+| ││↳ | ID | number | L'id du player à détruire (facultatif si utilise le name) | false |
+| ││↳ | name | string | Le nom du player à détruire (facultatif si utilise l'id') | false |
+| ││↳ | position | number[ ] | 3 nombres tels un vect3 qui définissent la position du joueur | false |
 
   </tab><tab group-key="Json" title="JSON">
 
 ```json
-{}
+{
+  "players": [
+    {
+      "ID": "number",
+      "name": "string",
+      "position": "number[]"
+    }
+  ]
+}
 ```
   </tab>
 </tabs>
@@ -372,11 +435,14 @@ Update player by name
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
+| ↳ | message | string | message d'erreur/de succès | false |
 
   </tab><tab group-key="Json" title="JSON">
 
 ```json
-{}
+{
+  "message": "string"
+}
 ```
   </tab>
 </tabs>
