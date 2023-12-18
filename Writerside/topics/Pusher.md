@@ -56,46 +56,6 @@ Envoie les notes de l'équipe à jour
   </tab>
 </tabs>
 
-
-
-### **updatePlayers**
-
-Sends the updated players informations to the client
-
-- __Input__: 
-
-<tabs group="JsonOrTable">
-  <tab group-key="Table" title="Tableau">
-
-| | Nom | Type | Description | optional |
-| --- | --- | --- | --- | --- |
-|  | { } | object { } |  |  |
-
-  </tab><tab group-key="Json" title="JSON">
-
-```json
-{}
-```
-  </tab>
-</tabs>
-
-- __Output__: 
-
-<tabs group="JsonOrTable">
-  <tab group-key="Table" title="Tableau">
-
-| | Nom | Type | Description | optional |
-| --- | --- | --- | --- | --- |
-|  | { } | object { } |  |  |
-
-  </tab><tab group-key="Json" title="JSON">
-
-```json
-{}
-```
-  </tab>
-</tabs>
-
 ## INVENTORY
 
 
@@ -175,6 +135,47 @@ Envoie aux clients si le password a été entrée correctement, mais uniquement 
 ```json
 {
   "valid": "boolean"
+}
+```
+  </tab>
+</tabs>
+
+## PLAYERS
+
+
+
+### **updatePlayers**
+
+Met à jour les players pour les clients
+
+- __Input__: Aucun
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | players | list [ ] |  |  |
+| │↳ | [ ] | object { } |  |  |
+| ││↳ | ID | number | L'id du player get | false |
+| ││↳ | name | string | le nom du player | false |
+| ││↳ | position | number[ ] | Liste de 3 valeurs tels un Vect3 correspondant au positions du joueur | false |
+| ↳ | message | string | message d'erreur/de succès | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "players": [
+    {
+      "ID": "number",
+      "name": "string",
+      "position": "number[]"
+    }
+  ],
+  "message": "string"
 }
 ```
   </tab>
