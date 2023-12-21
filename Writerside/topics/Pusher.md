@@ -241,13 +241,25 @@ Envoie la liste des ampoules à jour
 <tabs group="JsonOrTable">
   <tab group-key="Table" title="Tableau">
 
-| Type | Description | optional |
-| --- | --- | --- |
-|  | { } | boolean[ ] | tableau de 4 booléen indiquant si chaques ampoules sont valides ou non | false |
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | [ ] | list [ ] |  |  |
+| ↳ | [ ] | object { } |  |  |
+| │↳ | place | boolean | Si l'ampoule est placer | false |
+| │↳ | lightColor | number[ ] | Couleur de la lumière (en vect3) | false |
+| │↳ | valid | boolean | Si l'ampoule est valide | false |
 
   </tab><tab group-key="Json" title="JSON">
 
-boolean[]
+```json
+[
+  {
+    "place": "boolean",
+    "lightColor": "number[]",
+    "valid": "boolean"
+  }
+]
+```
   </tab>
 </tabs>
 
