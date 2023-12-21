@@ -227,3 +227,39 @@ Met à jour les players pour les clients
   </tab>
 </tabs>
 
+## LIGHTBULBS
+
+
+
+### **updateLightbulbs**
+
+Envoie la liste des ampoules à jour
+
+- __Input__: Aucun
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | [ ] | list [ ] |  |  |
+| ↳ | [ ] | object { } |  |  |
+| │↳ | place | boolean | Si l'ampoule est placer | false |
+| │↳ | lightColor | number[ ] | Couleur de la lumière (en vect3) | false |
+| │↳ | valid | boolean | Si l'ampoule est valide | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+[
+  {
+    "place": "boolean",
+    "lightColor": "number[]",
+    "valid": "boolean"
+  }
+]
+```
+  </tab>
+</tabs>
+

@@ -121,7 +121,7 @@ Met à jour les clients (lancer à chaque fois qu'un client se (re)connecte, et 
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld) [notesChange](Pusher.md#noteschange) [updatePlayers](Pusher.md#updateplayers) [updateInventory](Pusher.md#updateinventory) [hallWay2TryPsd](Pusher.md#hallway2trypsd) [ddust2TryPsd](Pusher.md#ddust2trypsd)
+- __Utilisation de Pusher__: [helloWorld](Pusher.md#helloworld) [notesChange](Pusher.md#noteschange) [updatePlayers](Pusher.md#updateplayers) [updateInventory](Pusher.md#updateinventory) [hallWay2TryPsd](Pusher.md#hallway2trypsd) [ddust2TryPsd](Pusher.md#ddust2trypsd) [updateLightbulbs](Pusher.md#updatelightbulbs)
 ## POST
 
 
@@ -276,6 +276,64 @@ Ajoute un objet à l'inventaire
 </tabs>
 
 - __Utilisation de Pusher__: [updateInventory](Pusher.md#updateinventory)
+
+
+### **Add Bulb to list**
+
+Ajoute une ampoule à la liste
+
+- __Path__: [/lightbulbs/add](http://localhost:3001/lightbulbs/add)
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | objs | list [ ] |  |  |
+| │↳ | [ ] | object { } |  |  |
+| ││↳ | name | string | Nom de l'ampoule à poser (facultatif si utilise le UUID) | false |
+| ││↳ | uuid | number | UUID de l'ampoule à poser (facultatif si utilise le nom) | false |
+| ││↳ | base | number | numéro du socle sur lequel est l'ampoule (0 | 1 | 2 | 3) | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "objs": [
+    {
+      "name": "string",
+      "uuid": "number",
+      "base": "number"
+    }
+  ]
+}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | message | string | message d'erreur/de succès | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "message": "string"
+}
+```
+  </tab>
+</tabs>
+
+- __Utilisation de Pusher__: [updateLightbulbs](Pusher.md#updatelightbulbs) [updateInventory](Pusher.md#updateinventory)
 
 
 ### **Notes changes**
@@ -554,3 +612,51 @@ Retire un objet de l'inventaire
 </tabs>
 
 - __Utilisation de Pusher__: [updateInventory](Pusher.md#updateinventory)
+
+
+### **Remove Bulb to list**
+
+Retire une ampoule à la liste
+
+- __Path__: [/lightbulbs/remove](http://localhost:3001/lightbulbs/remove)
+- __Input__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | bases | number[ ] | Numéro de la/les base(s) à vider (0 | 1 | 2 | 3) | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "bases": "number[]"
+}
+```
+  </tab>
+</tabs>
+
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| | Nom | Type | Description | optional |
+| --- | --- | --- | --- | --- |
+|  | { } | object { } |  |  |
+| ↳ | message | string | message d'erreur/de succès | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+```json
+{
+  "message": "string"
+}
+```
+  </tab>
+</tabs>
+
+- __Utilisation de Pusher__: [updateLightbulbs](Pusher.md#updatelightbulbs) [updateInventory](Pusher.md#updateinventory)
