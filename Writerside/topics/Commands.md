@@ -336,35 +336,6 @@ Ajoute une ampoule à la liste
 - __Utilisation de Pusher__: [updateLightbulbs](Pusher.md#updatelightbulbs)
 
 
-### **Switch on a lightbulb**
-
-Allumer une ampoule
-
-- __Path__: [/lightbulbs/switchon](http://localhost:3001/lightbulbs/switchon)
-- __Input__: Aucun
-- __Output__: 
-
-<tabs group="JsonOrTable">
-  <tab group-key="Table" title="Tableau">
-
-| | Nom | Type | Description | optional |
-| --- | --- | --- | --- | --- |
-|  | { } | object { } |  |  |
-| ↳ | message | string | message d'erreur/de succès | false |
-
-  </tab><tab group-key="Json" title="JSON">
-
-```json
-{
-  "message": "string"
-}
-```
-  </tab>
-</tabs>
-
-- __Utilisation de Pusher__: Non
-
-
 ### **Notes changes**
 
 Change les notes de l'équipe
