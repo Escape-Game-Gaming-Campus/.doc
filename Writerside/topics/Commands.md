@@ -333,7 +333,7 @@ Ajoute une ampoule à la liste
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [updateLightbulbs](Pusher.md#updatelightbulbs)
+- __Utilisation de Pusher__: [updateLightbulbs](Pusher.md#updatelightbulbs) [updateInventory](Pusher.md#updateinventory)
 
 
 ### **Notes changes**
@@ -659,4 +659,4 @@ Retire une ampoule à la liste
   </tab>
 </tabs>
 
-- __Utilisation de Pusher__: [updateLightbulbs](Pusher.md#updatelightbulbs)
+- __Utilisation de Pusher__: [updateLightbulbs](Pusher.md#updatelightbulbs) [updateInventory](Pusher.md#updateinventory)
