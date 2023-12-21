@@ -295,7 +295,7 @@ Ajoute une ampoule à la liste
 | │↳ | [ ] | object { } |  |  |
 | ││↳ | name | string | Nom de l'ampoule à poser (facultatif si utilise le UUID) | false |
 | ││↳ | uuid | number | UUID de l'ampoule à poser (facultatif si utilise le nom) | false |
-| ││↳ | base | number | numéro du socle sur lequel est l'ampoule (0 | 1 | 2) | false |
+| ││↳ | base | number | numéro du socle sur lequel est l'ampoule (0 | 1 | 2 | 3) | false |
 
   </tab><tab group-key="Json" title="JSON">
 
@@ -627,7 +627,7 @@ Retire une ampoule à la liste
 | | Nom | Type | Description | optional |
 | --- | --- | --- | --- | --- |
 |  | { } | object { } |  |  |
-| ↳ | bases | number[ ] | Numéro de la/les base(s) à vider | false |
+| ↳ | bases | number[ ] | Numéro de la/les base(s) à vider (0 | 1 | 2 | 3) | false |
 
   </tab><tab group-key="Json" title="JSON">
 
