@@ -227,3 +227,27 @@ Met à jour les players pour les clients
   </tab>
 </tabs>
 
+## LIGHTBULBS
+
+
+
+### **updateLightbulbs**
+
+Envoie la liste des ampoules à jour
+
+- __Input__: Aucun
+- __Output__: 
+
+<tabs group="JsonOrTable">
+  <tab group-key="Table" title="Tableau">
+
+| Type | Description | optional |
+| --- | --- | --- |
+|  | { } | boolean[ ] | tableau de 4 booléen indiquant si chaques ampoules sont valides ou non | false |
+
+  </tab><tab group-key="Json" title="JSON">
+
+boolean[]
+  </tab>
+</tabs>
+
