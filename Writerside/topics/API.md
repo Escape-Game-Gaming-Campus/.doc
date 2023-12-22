@@ -2,6 +2,7 @@
 
 - [Commands](Commands.md)
 - [Pusher](Pusher.md)
+- [Lifx](Lifx.md)
 ## AppConfig.json
 ```json
 ```
