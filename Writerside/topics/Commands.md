@@ -8,7 +8,7 @@
 
 Renvoie "Hello world!"
 
-- __Path__: [/helloWorld](http://localhost:3001/helloWorld)
+- __Path__: [/helloWorld](http://www.gwenitora.com:3000/helloWorld)
 - __Input__: Aucun
 - __Output__: 
 
@@ -37,7 +37,7 @@ Renvoie "Hello world!"
 
 Get tout les players ou un player en particulier
 
-- __Path__: [/players/get](http://localhost:3001/players/get)
+- __Path__: [/players/get](http://www.gwenitora.com:3000/players/get)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -99,7 +99,7 @@ Get tout les players ou un player en particulier
 
 Met à jour les clients (lancer à chaque fois qu'un client se (re)connecte, et au lancement de l'API)
 
-- __Path__: [/update](http://localhost:3001/update)
+- __Path__: [/update](http://www.gwenitora.com:3000/update)
 - __Input__: Aucun
 - __Output__: 
 
@@ -130,7 +130,7 @@ Met à jour les clients (lancer à chaque fois qu'un client se (re)connecte, et 
 
 Permet de vérifier si le mot de passe pour débloquer Totoro est bon
 
-- __Path__: [/ddust2/tryPsd](http://localhost:3001/ddust2/tryPsd)
+- __Path__: [/ddust2/tryPsd](http://www.gwenitora.com:3000/ddust2/tryPsd)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -178,7 +178,7 @@ Permet de vérifier si le mot de passe pour débloquer Totoro est bon
 
 Enigme scene de crime pour avoir une ampoule rouge
 
-- __Path__: [/hallWay2/tryPsd](http://localhost:3001/hallWay2/tryPsd)
+- __Path__: [/hallWay2/tryPsd](http://www.gwenitora.com:3000/hallWay2/tryPsd)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -226,7 +226,7 @@ Enigme scene de crime pour avoir une ampoule rouge
 
 Ajoute un objet à l'inventaire
 
-- __Path__: [/inv/add](http://localhost:3001/inv/add)
+- __Path__: [/inv/add](http://www.gwenitora.com:3000/inv/add)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -282,7 +282,7 @@ Ajoute un objet à l'inventaire
 
 Ajoute une ampoule à la liste
 
-- __Path__: [/lightbulbs/add](http://localhost:3001/lightbulbs/add)
+- __Path__: [/lightbulbs/add](http://www.gwenitora.com:3000/lightbulbs/add)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -340,7 +340,7 @@ Ajoute une ampoule à la liste
 
 Change les notes de l'équipe
 
-- __Path__: [/notesChanges](http://localhost:3001/notesChanges)
+- __Path__: [/notesChanges](http://www.gwenitora.com:3000/notesChanges)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -388,7 +388,7 @@ Change les notes de l'équipe
 
 Supprime des joueurs (par leur nom ou leur id)
 
-- __Path__: [/players/delete](http://localhost:3001/players/delete)
+- __Path__: [/players/delete](http://www.gwenitora.com:3000/players/delete)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -444,7 +444,7 @@ Supprime des joueurs (par leur nom ou leur id)
 
 Ajoute des joueurs (par leur nom ou leur id)
 
-- __Path__: [/players/add](http://localhost:3001/players/add)
+- __Path__: [/players/add](http://www.gwenitora.com:3000/players/add)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -502,7 +502,7 @@ Ajoute des joueurs (par leur nom ou leur id)
 
 Met à jour un joueur (par son nom ou son id)
 
-- __Path__: [/players/update](http://localhost:3001/players/update)
+- __Path__: [/players/update](http://www.gwenitora.com:3000/players/update)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -562,7 +562,7 @@ Met à jour un joueur (par son nom ou son id)
 
 Retire un objet de l'inventaire
 
-- __Path__: [/inv/remove](http://localhost:3001/inv/remove)
+- __Path__: [/inv/remove](http://www.gwenitora.com:3000/inv/remove)
 - __Input__: 
 
 <tabs group="JsonOrTable">
@@ -618,7 +618,7 @@ Retire un objet de l'inventaire
 
 Retire une ampoule à la liste
 
-- __Path__: [/lightbulbs/remove](http://localhost:3001/lightbulbs/remove)
+- __Path__: [/lightbulbs/remove](http://www.gwenitora.com:3000/lightbulbs/remove)
 - __Input__: 
 
 <tabs group="JsonOrTable">
